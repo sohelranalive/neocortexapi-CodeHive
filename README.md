@@ -11,6 +11,12 @@ To run this project, we need.
 * Nuget package: NeoCortexApi Version= 1.1.4
 For code debugging, we recommend using Visual Studio IDE/Visual Studio Code. This project can be run on github codespaces as well.
 
+# Usage
+To run this project,
+
+* Install .NET SDK. Then using the code editor/IDE of your choice, create a new console project and place all the C# codes inside your project folder.
+* Add/reference Nuget package NeoCortexApi v1.1.4 to this project.
+* Place numerical sequence CSV Files (datasets) under relevant folders respectively. All the folders should be inside the project folder. More details are given below.
 
 
 
