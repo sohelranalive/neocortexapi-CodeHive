@@ -62,6 +62,21 @@ By following the steps, I tried to complete the project, which is the practical 
 A theoretical framework for comprehending and modelling how the human neocortex processes information is called Hierarchical Temporal Memory (HTM). It focusses on identifying temporal patterns and formulating predictions using them, and it draws inspiration from neurology. HTM works very effectively for detecting anomalies.HTM contrasts the real input SDR with the anticipated SDR during inference. The HTM quantifies the variance by assigning an anomaly score in the event that the input and the prediction do not match. Unusual or unexpected inputs are detected in real time using the anomaly score.
 
 
+## Requirements
+
+	### Software Requirements:
+
+ 		*.NET Framework/SDK: Version 7.0 or higher.
+ 		* NeoCortexAPI: Library for implementing sequence learning and prediction.
+ 		* IDE: Visual Studio 2022 or any compatible .NET development environment.
+
+	### Dependencies:
+
+		* NeoCortexAPI NuGet package (NeoCortexApi Version= 1.1.4 For code debugging).
+		* CSV file handling libraries (optional, use in-built .NET functionality).
+
+
+
   
 
  
