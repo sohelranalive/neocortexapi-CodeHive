@@ -26,15 +26,18 @@ The initial challenge to apply a that can accurately identify the anomalies in n
 
 Hierarchical Temporal Memory(HTM) is a machine learning algorithm which is inspired from the neocortex of the human brain. HTM excels at recognizing temporal patterns and making predictions in time-series data. For taking input data efficiently and robustly HTM used Sparse Distributed Representations(SDRs).
 
+
+Figure 1: HTM is inspired from neocortex of human brain. 
+
 In the project, the NeoCortexAPI – a .NET implementation of the HTM framework – will be used to make an anomaly detection system. The project include two parts:
 
-* 1. Training : The HTM model trains from the normal numeric sequences, such as network traffic loads, from artificially created data.
+* 1. Training: The HTM model trains from the normal numeric sequences, such as network traffic loads, from artificially created data.
 
 * 2. Testing: The trained model is tested on new sequences containing both normal data and anomalies. The model identifies  anomalies based on deviations from predicted values. 
 
 The project will used C# and the NeoCortexAPI library to process the data, train the HTM model, and evaluate the performance. The main objective of the project is to determine a robust and efficient system which can accurately predict the anomalies while analyzing the results using metrics like False Negative Rate(FNR)  and False Positive Rate(FNR).
 
-The anomaly detection helps to identify any unusual traffic patterns or anomalies in the network such as cyberattacks or system failures. Moreover it is used for fraud detection in financial transactions. For monitoring machine and equipment performance and detecting anomalies to prevent breakdowns. The model can also be used to detect diseases on the human body or energy consumption to survey irregularities and optimize energy distribution. 
+The anomaly detection helps to identify any unusual traffic patterns or anomalies in the network such as cyberattacks or system failures. Moreover it is used for fraud detection in financial transactions. For monitoring machine and equipment performance and detecting anomalies to prevent breakdowns. The model can also be used to detect diseases on the human body or energy consumption to survey irregularities and optimize energy distribution.
 
 ## Objectives
 
@@ -75,8 +78,14 @@ A theoretical framework for comprehending and modelling how the human neocortex 
 		* NeoCortexAPI NuGet package (NeoCortexApi Version= 1.1.4 For code debugging).
 		* CSV file handling libraries (optional, use in-built .NET functionality).
 
+## Data Preparation
 
+Data preparation is one of the most tricky step in the project as it ensures the model is trained and tested wit appropripate, well-structed data. In the project numeric values are stored in the .csv file, representing time-series data. This explicit real-workd scenarios, such as network load percentages with normal data and anomalies strategically included in separate datasets.
 
-  
+* Input Data Overview
+The data consist of numeric sequences representing network load values in percentages. The range of the values between 0 to 100 and normal values are typically within the range of 45 to 55. The dataset has two categories e.g, one is training dataset and another one is testing dataset. The train data follows the numeric order where the testing data contains random sequences.
+
+* Folder Structure
+Data is organised with two folders, where one folder contains train_data and another folder contains predict_data. 
 
  
