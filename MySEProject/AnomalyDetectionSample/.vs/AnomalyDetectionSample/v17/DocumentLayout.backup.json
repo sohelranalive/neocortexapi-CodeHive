@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|d:\\books\\fuas masters\\wise 24-25 (5th)\\se\\neocortexapi-codehive\\myseproject\\anomalydetectionsample\\htmanomalytesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|solutionrelative:htmanomalytesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|d:\\books\\fuas masters\\wise 24-25 (5th)\\se\\neocortexapi-codehive\\myseproject\\anomalydetectionsample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,12 +27,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "HTMAnomalyTesting.cs",
+              "DocumentMoniker": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\HTMAnomalyTesting.cs",
+              "RelativeDocumentMoniker": "HTMAnomalyTesting.cs",
+              "ToolTip": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\HTMAnomalyTesting.cs",
+              "RelativeToolTip": "HTMAnomalyTesting.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwAMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T22:17:47.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T22:09:14.083Z",
               "EditorCaption": ""

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnomalyDetectionSample")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d597d8bf883522b673d5123b110ad47ce5a4109")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a30e1e071883683f2ea8c37452b122c3f0fc3d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnomalyDetectionSample")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnomalyDetectionSample")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
