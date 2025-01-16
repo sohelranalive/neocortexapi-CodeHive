@@ -133,11 +133,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\AnomalyDetection\\AnomalyDetection.csproj",
-      "projectName": "AnomalyDetection",
-      "projectPath": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\AnomalyDetection\\AnomalyDetection.csproj",
+      "projectUniqueName": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\AnomalyDetectionSample.csproj",
+      "projectName": "AnomalyDetectionSample",
+      "projectPath": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\AnomalyDetectionSample.csproj",
       "packagesPath": "C:\\Users\\Sohel\\.nuget\\packages\\",
-      "outputPath": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\AnomalyDetection\\obj\\",
+      "outputPath": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
