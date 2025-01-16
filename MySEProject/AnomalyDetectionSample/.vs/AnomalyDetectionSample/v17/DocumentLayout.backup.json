@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\",
+  "WorkspaceRootPath": "D:\\SE PROJECT\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|d:\\books\\fuas masters\\wise 24-25 (5th)\\se\\neocortexapi-codehive\\myseproject\\anomalydetectionsample\\htmanomalytesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|d:\\se project\\neocortexapi-codehive\\myseproject\\anomalydetectionsample\\htmanomalytesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|solutionrelative:htmanomalytesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|d:\\books\\fuas masters\\wise 24-25 (5th)\\se\\neocortexapi-codehive\\myseproject\\anomalydetectionsample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|d:\\se project\\neocortexapi-codehive\\myseproject\\anomalydetectionsample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|d:\\se project\\neocortexapi-codehive\\myseproject\\anomalydetectionsample\\htmmodeltraining.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50192537-2A15-4B54-BCB2-A731B9B3C364}|AnomalyDetectionSample.csproj|solutionrelative:htmmodeltraining.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HTMModeltraining.cs",
+              "DocumentMoniker": "D:\\SE PROJECT\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\HTMModeltraining.cs",
+              "RelativeDocumentMoniker": "HTMModeltraining.cs",
+              "ToolTip": "D:\\SE PROJECT\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\HTMModeltraining.cs",
+              "RelativeToolTip": "HTMModeltraining.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T22:37:19.977Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "HTMAnomalyTesting.cs",
-              "DocumentMoniker": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\HTMAnomalyTesting.cs",
+              "DocumentMoniker": "D:\\SE PROJECT\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\HTMAnomalyTesting.cs",
               "RelativeDocumentMoniker": "HTMAnomalyTesting.cs",
-              "ToolTip": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\HTMAnomalyTesting.cs",
+              "ToolTip": "D:\\SE PROJECT\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\HTMAnomalyTesting.cs",
               "RelativeToolTip": "HTMAnomalyTesting.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwAMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T22:17:47.989Z",
               "EditorCaption": ""
@@ -41,13 +58,14 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\Program.cs",
+              "DocumentMoniker": "D:\\SE PROJECT\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\Program.cs",
+              "ToolTip": "D:\\SE PROJECT\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T22:09:14.083Z"
+              "WhenOpened": "2025-01-16T22:09:14.083Z",
+              "EditorCaption": ""
             }
           ]
         }
