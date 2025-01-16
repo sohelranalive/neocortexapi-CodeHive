@@ -78,6 +78,13 @@ A theoretical framework for comprehending and modelling how the human neocortex 
 		* NeoCortexAPI NuGet package (NeoCortexApi Version= 1.1.4 For code debugging).
 		* CSV file handling libraries (optional, use in-built .NET functionality).
 
+
+## Project Structure:
+
+<div align="center">
+  <img src='MySEProject\Documentation\_asset\work_flow_diagram.png'/>
+</div>
+
 ## Data Preparation
 
 Data preparation is one of the most tricky step in the project as it ensures the model is trained and tested wit appropripate, well-structed data. In the project numeric values are stored in the .csv file, representing time-series data. This explicit real-workd scenarios, such as network load percentages with normal data and anomalies strategically included in separate datasets.
