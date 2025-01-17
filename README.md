@@ -137,5 +137,6 @@ Gather sequential patterns by forming connections between cells in mini-columns.
 
 In the training and learning phase HTM model enabling it to learn the temporal patterns and relationships in the sequences. Each sequence is processed step by step with the model constructing a representation of the data’s normal structure. The training phase emphasized on originating robust memory connections that capture the essence of normal behaviour.
 
+Then it goes for testing data which includes anomalies, and is passed to the trained HTM model for prediction. The model is predicted the value depends on the pattern it learns from the training process. Then the predicted value is compared with the actual value. If the deviation exceeds a predefined tolerance the value is flagged as an anomaly.
 
  
