@@ -135,6 +135,7 @@ The input data is encoded into Sparse Distributed Representations(SDRs). For tun
 
 Gather sequential patterns by forming connections between cells in mini-columns. It tracks temporal relationships between inputs over time. For tuning, set max synapses per segment higher values to store more context. Determine activation threshold to active synapses required for a segment to be active. Adjust this based on input complexity.
 
+In the training and learning phase HTM model enabling it to learn the temporal patterns and relationships in the sequences. Each sequence is processed step by step with the model constructing a representation of the data’s normal structure. The training phase emphasized on originating robust memory connections that capture the essence of normal behaviour.
 
 
  
