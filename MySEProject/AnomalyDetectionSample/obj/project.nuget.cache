@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ZFvuk0WTwPc=",
+  "dgSpecHash": "anVY4rG6tnM=",
   "success": true,
-  "projectFilePath": "D:\\BOOKS\\FUAS Masters\\WiSe 24-25 (5th)\\SE\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\AnomalyDetectionSample.csproj",
+  "projectFilePath": "D:\\SE PROJECT\\neocortexapi-CodeHive\\MySEProject\\AnomalyDetectionSample\\AnomalyDetectionSample.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Sohel\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Sohel\\.nuget\\packages\\neocortexapi\\1.1.5\\neocortexapi.1.1.5.nupkg.sha512"
+    "C:\\Users\\mdash\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\mdash\\.nuget\\packages\\neocortexapi\\1.1.5\\neocortexapi.1.1.5.nupkg.sha512"
   ],
   "logs": []
 }
