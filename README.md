@@ -142,5 +142,8 @@ Then it goes for testing data which includes anomalies, and is passed to the tra
 The predicted value is evaluated using metrics like False Negative Rate(FNR) and False Positive Rate(FPR) to determine the model’s performance. This represents the model strength to correctly identify anomalies while minimizing false detections. Logs and outputs are saved for analysis and further optimization. 
  
 <div align="center">
-  <img src="C:/Users/rakat.murshed/Documents/SE Project docuemnts/output (2).png" width="170" height="131" />
+  <img src="C:/Users/rakat.murshed/Documents/SE Project docuemnts/output.png" width="170" height="131" />
 </div>
+
+
+By following this structure methodology, the project ensures the HTM model is effectively trained and tested, resulting in a robust anomaly detection model capable of handling real-world data scenarios. 
