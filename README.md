@@ -109,29 +109,30 @@ By following this process, the project ensures the HTM model receives clean, mea
 ## Project Methodology
 
 This point will illustrate the approach used to implement and evaluate the anomaly detection system inspired from the Hierarchical Temporal Model(HTM). It is designed to ensure clarity and efficiency during maintaining a strong foundation in both data science principles and HTM’s biological inspiration. It’s essential to find the best fit HTM model, after tuning its parameters and finding the best HTM model for the project. 
-Key Parameters Tuning of the HTM Model
 
-** Input Dimensions
+# Key Parameters Tuning of the HTM Model
+
+* Input Dimensions
 
 The input dimensions specify the length of the input space, represented in a 1D array of bits. If the input range between 0 to 100 with 101 buckets(discrete intervals), and 21 active bits are needed, the total input dimension would be Input Bits = 101 + 21-1=121. It’s important to choose input dimensions based on the range and granularity of the input data.  Large input dimensions contain more resolution but raise computational cost.
 
-** Column Dimensions
+* Column Dimensions
 
 This contains the number of mini -columns in the Spatial Pooler. Each column corresponds to a feature in the data. Raise the dimensions for high-dimensional data to gather more patterns. Reduce dimensions for simple datasets to optimize computation. 
 
-** Active Threshold
+* Active Threshold
 
 Calculate  the number of active cells required to represent an input. This value controls how many mini-column activate for a given input. For tuning the threshold start with a default threshold and adjust upwards for sparse data to prevent overfitting. Lower it slightly for noisy data to increase sensitivity.
 
-** Permanence Adjustments
+* Permanence Adjustments
 
 Controlling the strength of synaptic connections in Temporal Memory. The amount by which a connection’s permanence increases when it is reinforced. When it is not used the amount by which a connection’s permanence decreases. For smaller increments or decrements to learn gradually for stable data. Use dynamic values for dynamic or fast changing data to adapt quickly.
 
-** Spatial Pooler
+* Spatial Pooler
 
 The input data is encoded into Sparse Distributed Representations(SDRs). For tuning defines the range of columns connected to an input. Take a moderate value to balance global and local connections. Determine the frequency of column activation Boots the activation of uderused columns.  Higher values used for diverse data.
 
-** Temporal Memory
+* Temporal Memory
 
 Gather sequential patterns by forming connections between cells in mini-columns. It tracks temporal relationships between inputs over time. For tuning, set max synapses per segment higher values to store more context. Determine activation threshold to active synapses required for a segment to be active. Adjust this based on input complexity.
 
