@@ -85,6 +85,11 @@ A theoretical framework for comprehending and modelling how the human neocortex 
   <img src='MySEProject\Documentation\_asset\work_flow_diagram.png'/>
 </div>
 
+
+# Project Methodology
+
+This point will illustrate the approach used to implement and evaluate the anomaly detection system inspired from the Hierarchical Temporal Model(HTM). It is designed to ensure clarity and efficiency during maintaining a strong foundation in both data science principles and HTM’s biological inspiration. It’s essential to find the best fit HTM model, after tuning its parameters and finding the best HTM model for the project. 
+
 ## Data Preparation
 
 Data preparation is one of the most tricky step in the project as it ensures the model is trained and tested wit appropripate, well-structed data. In the project numeric values are stored in the .csv file, representing time-series data. This explicit real-workd scenarios, such as network load percentages with normal data and anomalies strategically included in separate datasets.
@@ -106,11 +111,8 @@ If any CSV file contains non-numeric data, the system tries to convert the data 
 
 By following this process, the project ensures the HTM model receives clean, meaningful input that accurately represent the problem domain. The processing of the datasets lays the foundation for effective model training, testing and anomaly detection. 
 
-## Project Methodology
 
-This point will illustrate the approach used to implement and evaluate the anomaly detection system inspired from the Hierarchical Temporal Model(HTM). It is designed to ensure clarity and efficiency during maintaining a strong foundation in both data science principles and HTM’s biological inspiration. It’s essential to find the best fit HTM model, after tuning its parameters and finding the best HTM model for the project. 
-
-# Key Parameters Tuning of the HTM Model
+## Key Parameters Tuning of the HTM Model
 
 * Input Dimensions
 
@@ -136,9 +138,15 @@ The input data is encoded into Sparse Distributed Representations(SDRs). For tun
 
 Gather sequential patterns by forming connections between cells in mini-columns. It tracks temporal relationships between inputs over time. For tuning, set max synapses per segment higher values to store more context. Determine activation threshold to active synapses required for a segment to be active. Adjust this based on input complexity.
 
+
+
 In the training and learning phase HTM model enabling it to learn the temporal patterns and relationships in the sequences. Each sequence is processed step by step with the model constructing a representation of the data’s normal structure. The training phase emphasized on originating robust memory connections that capture the essence of normal behaviour.
 
+
+
 Then it goes for testing data which includes anomalies, and is passed to the trained HTM model for prediction. The model is predicted the value depends on the pattern it learns from the training process. Then the predicted value is compared with the actual value. If the deviation exceeds a predefined tolerance the value is flagged as an anomaly.
+
+
 
 The predicted value is evaluated using metrics like False Negative Rate(FNR) and False Positive Rate(FPR) to determine the model’s performance. This represents the model strength to correctly identify anomalies while minimizing false detections. Logs and outputs are saved for analysis and further optimization. 
  
