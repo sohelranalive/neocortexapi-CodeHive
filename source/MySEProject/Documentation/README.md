@@ -111,7 +111,7 @@ If any CSV file contains non-numeric data, the system tries to convert the data 
 By following this process, the project ensures the HTM model receives clean, meaningful input that accurately represent the problem domain. The processing of the datasets lays the foundation for effective model training, testing and anomaly detection. 
 
 
-## Key Parameters Tuning of the HTM Model
+# Key Parameters Tuning of the HTM Model
 
 * Input Dimensions
 
