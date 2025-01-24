@@ -1,11 +1,12 @@
 ﻿namespace AnomalyDetectionSample
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Hello, World!");
+            // Starts experiment that demonstrates how to perform anomaly detection using multisequencelearning.
+            HTMAnomalyTesting tester = new HTMAnomalyTesting();
+            tester.Run();
         }
     }
 }
