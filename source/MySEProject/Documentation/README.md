@@ -126,15 +126,15 @@ The primary objective of the project is to create and demonstrate an anomalies d
 - Temporal Memory
 
 <p align='Justify'> Gather sequential patterns by forming connections between cells in mini-columns. It tracks temporal relationships between inputs over time. For tuning, set max synapses per segment higher values to store more context. Determine activation threshold to active synapses required for a segment to be active. Adjust this based on input complexity.
-<br>
+<br><br>
 In the training and learning phase HTM model enabling it to learn the temporal patterns and relationships in the sequences. Each sequence is processed step by step with the model constructing a representation of the data’s normal structure. The training phase emphasized on originating robust memory connections that capture the essence of normal behavior.
-<br>
+<br><br>
 Then it goes for testing data which includes anomalies, and is passed to the trained HTM model for prediction. The model is predicted the value depends on the pattern it learns from the training process. Then the predicted value is compared with the actual value. If the deviation exceeds a predefined tolerance the value is flagged as an anomaly.
-<br>
+<br><br>
 The predicted value is evaluated using metrics like False Negative Rate(FNR) and False Positive Rate(FPR) to determine the model’s performance. This represents the model strength to correctly identify anomalies while minimizing false detections. Logs and outputs are saved for analysis and further optimization.</p>
 
 <div align="center">
-  <img src='\_assets\output.png' width="170" height="131" />
+  <img src='\_assets\output.png' width="300" height="400" />
 </div>
 
 <p align='Justify'> By following this structure methodology, the project ensures the HTM model is effectively trained and tested, resulting in a robust anomaly detection model capable of handling real-world data scenarios. </p>
