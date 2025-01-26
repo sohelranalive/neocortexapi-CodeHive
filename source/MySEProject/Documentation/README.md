@@ -54,14 +54,16 @@ The primary objective of the project is to create and demonstrate an anomalies d
 
 ## Requirements
 
-    * Software Requirements:
-        ** .NET Framework/SDK: Version 7.0 or higher.
-        ** NeoCortexAPI: Library for implementing sequence learning and prediction.
-        ** IDE: Visual Studio 2022 or any compatible .NET development environment.
+- Software Requirements:
 
-    * Dependencies:
-        ** NeoCortexAPI NuGet package (NeoCortexApi Version= 1.1.4 For code debugging).
-        ** CSV file handling libraries (optional, use in-built .NET functionality).
+  - .NET Framework/SDK: Version 7.0 or higher.
+  - NeoCortexAPI: Library for implementing sequence learning and prediction.
+  - IDE: Visual Studio 2022 or any compatible .NET development environment.
+
+- Dependencies:
+
+  - NeoCortexAPI NuGet package (NeoCortexApi Version= 1.1.4 For code debugging).
+  - CSV file handling libraries (optional, use in-built .NET functionality).
 
 ## Project Structure
 
@@ -77,23 +79,23 @@ The primary objective of the project is to create and demonstrate an anomalies d
 
 <p align='Justify'> Data preparation is one of the most tricky step in the project as it ensures the model is trained and tested wit appropripate, well-structed data. In the project numeric values are stored in the .csv file, representing time-series data. This explicit real-workd scenarios, such as network load percentages with normal data and anomalies strategically included in separate datasets. <p>
 
-##### Input Data Overview
+- Input Data Overview
 
 <p align='Justify'> The data consist of numeric sequences representing network load values in percentages. The range of the values between 0 to 100 and normal values are typically within the range of 45 to 55. The dataset has two categories e.g, one is training dataset and another one is testing dataset. The train data follows the numeric order where the testing data contains random sequences. </p>
 
-##### Folder Structure
+- Folder Structure
 
 <p align='Justify'> Data is organized with two folders, where one folder contains train_data and another folder contains predict_data.</p>
 
-##### Data Format
+- Data Format
 
 <p align='Justify'> The data is stored in the CSV file and the values must be separate by commas. Training data files contain values within the normal range (e.g, 45 to 55), where testing data files introduce anomalies (e.g, values like 10, 90) at random position. </p>
 
-##### Trimming Sequences
+- Trimming Sequences
 
 <p align='Justify'> To stimulate real-world incomplete data scenarios, test sequences are cut by removing random number of elements (1 to 4) from the beginning. For example, the sequence the sequence 49,52,55,48,52,47 may be trimmed to 55,48,52,47. Trimming helps the model to generalize and handle or partially observe sequences efficiently. </p>
 
-##### Exception Handling
+- Exception Handling
 
 <p align='Justify'> If any CSV file contains non-numeric data, the system tries to convert the data to numeric values. If a sequences is too short after trimming, it is ignored to avoid error during prediction.</p>
 
@@ -103,36 +105,36 @@ The primary objective of the project is to create and demonstrate an anomalies d
 
 - Input Dimensions
 
-The input dimensions specify the length of the input space, represented in a 1D array of bits. If the input range between 0 to 100 with 101 buckets(discrete intervals), and 21 active bits are needed, the total input dimension would be Input Bits = 101 + 21-1=121. It’s important to choose input dimensions based on the range and granularity of the input data. Large input dimensions contain more resolution but raise computational cost.
+<p align='Justify'> The input dimensions specify the length of the input space, represented in a 1D array of bits. If the input range between 0 to 100 with 101 buckets(discrete intervals), and 21 active bits are needed, the total input dimension would be Input Bits = 101 + 21-1=121. It’s important to choose input dimensions based on the range and granularity of the input data. Large input dimensions contain more resolution but raise computational cost. </p>
 
 - Column Dimensions
 
-This contains the number of mini -columns in the Spatial Pooler. Each column corresponds to a feature in the data. Raise the dimensions for high-dimensional data to gather more patterns. Reduce dimensions for simple datasets to optimize computation.
+<p align='Justify'> This contains the number of mini -columns in the Spatial Pooler. Each column corresponds to a feature in the data. Raise the dimensions for high-dimensional data to gather more patterns. Reduce dimensions for simple datasets to optimize computation. </p>
 
 - Active Threshold
 
-Calculate the number of active cells required to represent an input. This value controls how many mini-column activate for a given input. For tuning the threshold start with a default threshold and adjust upwards for sparse data to prevent overfitting. Lower it slightly for noisy data to increase sensitivity.
+<p align='Justify'> Calculate the number of active cells required to represent an input. This value controls how many mini-column activate for a given input. For tuning the threshold start with a default threshold and adjust upwards for sparse data to prevent overfitting. Lower it slightly for noisy data to increase sensitivity. </p>
 
 - Permanence Adjustments
 
-Controlling the strength of synaptic connections in Temporal Memory. The amount by which a connection’s permanence increases when it is reinforced. When it is not used the amount by which a connection’s permanence decreases. For smaller increments or decrements to learn gradually for stable data. Use dynamic values for dynamic or fast changing data to adapt quickly.
+<p align='Justify'> Controlling the strength of synaptic connections in Temporal Memory. The amount by which a connection’s permanence increases when it is reinforced. When it is not used the amount by which a connection’s permanence decreases. For smaller increments or decrements to learn gradually for stable data. Use dynamic values for dynamic or fast changing data to adapt quickly. </p>
 
 - Spatial Pooler
 
-The input data is encoded into Sparse Distributed Representations(SDRs). For tuning defines the range of columns connected to an input. Take a moderate value to balance global and local connections. Determine the frequency of column activation Boots the activation of uderused columns. Higher values used for diverse data.
+<p align='Justify'> The input data is encoded into Sparse Distributed Representations(SDRs). For tuning defines the range of columns connected to an input. Take a moderate value to balance global and local connections. Determine the frequency of column activation Boots the activation of underused columns. Higher values used for diverse data. </p>
 
 - Temporal Memory
 
-Gather sequential patterns by forming connections between cells in mini-columns. It tracks temporal relationships between inputs over time. For tuning, set max synapses per segment higher values to store more context. Determine activation threshold to active synapses required for a segment to be active. Adjust this based on input complexity.
-
+<p align='Justify'> Gather sequential patterns by forming connections between cells in mini-columns. It tracks temporal relationships between inputs over time. For tuning, set max synapses per segment higher values to store more context. Determine activation threshold to active synapses required for a segment to be active. Adjust this based on input complexity.
+<br>
 In the training and learning phase HTM model enabling it to learn the temporal patterns and relationships in the sequences. Each sequence is processed step by step with the model constructing a representation of the data’s normal structure. The training phase emphasized on originating robust memory connections that capture the essence of normal behavior.
-
+<br>
 Then it goes for testing data which includes anomalies, and is passed to the trained HTM model for prediction. The model is predicted the value depends on the pattern it learns from the training process. Then the predicted value is compared with the actual value. If the deviation exceeds a predefined tolerance the value is flagged as an anomaly.
-
-The predicted value is evaluated using metrics like False Negative Rate(FNR) and False Positive Rate(FPR) to determine the model’s performance. This represents the model strength to correctly identify anomalies while minimizing false detections. Logs and outputs are saved for analysis and further optimization.
+<br>
+The predicted value is evaluated using metrics like False Negative Rate(FNR) and False Positive Rate(FPR) to determine the model’s performance. This represents the model strength to correctly identify anomalies while minimizing false detections. Logs and outputs are saved for analysis and further optimization.</p>
 
 <div align="center">
-  <img src="C:/Users/rakat.murshed/Documents/SE Project docuemnts/output.png" width="170" height="131" />
+  <img src='\_assets\output.png' width="170" height="131" />
 </div>
 
-By following this structure methodology, the project ensures the HTM model is effectively trained and tested, resulting in a robust anomaly detection model capable of handling real-world data scenarios.
+<p align='Justify'> By following this structure methodology, the project ensures the HTM model is effectively trained and tested, resulting in a robust anomaly detection model capable of handling real-world data scenarios. </p>
