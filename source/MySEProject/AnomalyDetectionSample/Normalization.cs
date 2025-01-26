@@ -5,6 +5,11 @@ namespace AnomalyDetectionSample
 {
     public static class Normalization
     {
+        // Parameters for MultiSequenceLearning tuning
+        public static int MaxEpochs { get; set; } = 100; // Default number of epochs
+        public static double LearningRate { get; set; } = 0.01; // Default learning rate
+        public static double InputNoise { get; set; } = 0.05; // Default input noise level
+
         /// <summary>
         /// Normalizes a list of numerical sequences for better HTM training.
         /// </summary>
@@ -24,6 +29,19 @@ namespace AnomalyDetectionSample
                 normalizedSequences.Add(sequence.Select(value => (value - min) / range).ToList());
             }
             return normalizedSequences;
+        }
+
+        /// <summary>
+        /// Configures the tuning parameters for MultiSequenceLearning.
+        /// </summary>
+        /// <param name="maxEpochs">Maximum number of epochs.</param>
+        /// <param name="learningRate">Learning rate for the model.</param>
+        /// <param name="inputNoise">Noise level to add for robustness.</param>
+        public static void ConfigureTuningParameters(int maxEpochs, double learningRate, double inputNoise)
+        {
+            MaxEpochs = maxEpochs;
+            LearningRate = learningRate;
+            InputNoise = inputNoise;
         }
     }
 }
