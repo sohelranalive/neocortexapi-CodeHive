@@ -34,31 +34,14 @@ namespace AnomalyDetectionSample
             CSVFolderReader reader1 = new CSVFolderReader(predictingfolderPath);
             var sequences2 = reader1.ReadFolder();
 
-            // Normalize the sequences using the Normalization class
-            //Console.WriteLine("Normalizing sequences...");
-            //var normalizedTrainingSequences = Normalization.NormalizeSequences(sequences1);
-            //var normalizedPredictionSequences = Normalization.NormalizeSequences(sequences2);
-
             // Combine these sequences for using both training(learning) and predicting sequences
             // We will use both of them to feed into HTM Model for training
             List<List<double>> combinedSequences = new List<List<double>>(sequences1);
             combinedSequences.AddRange(sequences2);
 
-            // Step 4: Configure MultiSequenceLearning parameters via Normalization class
-            //Console.WriteLine("Configuring MultiSequenceLearning parameters...");
-            //Normalization.ConfigureTuningParameters(maxEpochs: 150, learningRate: 0.01, inputNoise: 0.05);
-
             // Convert sequences to HTM input format
             CSVToHTMInput converter = new CSVToHTMInput();
             var htmInput = converter.BuildHTMInput(combinedSequences);
-
-            // Step 6: Initialize and configure the MultiSequenceLearning model
-            //MultiSequenceLearning learning = new MultiSequenceLearning
-            //{
-            //    MaxEpochs = Normalization.MaxEpochs,
-            //    LearningRate = Normalization.LearningRate,
-            //    InputNoise = Normalization.InputNoise
-            //};
 
             // Starting multi-sequence learning experiment to generate predictor model
             // by passing htmInput 
