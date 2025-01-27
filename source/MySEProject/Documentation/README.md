@@ -134,4 +134,7 @@ The primary objective of the project is to create and demonstrate an anomalies d
 
 ## Conclusion
 
-<p align='Justify'> Content will be added here </p>
+<p align='Justify'> 
+To apply of an anomaly detection system using Hierarchical Temporal Memory(HTM) highlights the capacity of biologically-inspired machine learning models to process sequential data and identify irregular patterns effecitively. By following HTM's unique architecture, which mimics the human brain's neocortex, the system demonstrate its strength in learning temporal sequeces and indentifying anomalies with good degree of accuracy.
+
+ </p>
