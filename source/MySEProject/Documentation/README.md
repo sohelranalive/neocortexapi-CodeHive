@@ -113,6 +113,8 @@ The primary objective of the project is to create and demonstrate an anomalies d
 
 - Spatial Pooler
   <p align='Justify'> The input data is encoded into Sparse Distributed Representations(SDRs). For tuning defines the range of columns connected to an input. Take a moderate value to balance global and local connections. Determine the frequency of column activation Boots the activation of underused columns. Higher values used for diverse data. </p>
+  
+#### Training and Learning Phase of HTM Model
 
 - Temporal Memory
   <p align='Justify'> Gather sequential patterns by forming connections between cells in mini-columns. It tracks temporal relationships between inputs over time. For tuning, set max synapses per segment higher values to store more context. Determine activation threshold to active synapses required for a segment to be active. Adjust this based on input complexity.
