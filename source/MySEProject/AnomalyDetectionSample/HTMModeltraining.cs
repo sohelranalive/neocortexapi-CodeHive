@@ -24,6 +24,7 @@ namespace AnomalyDetectionSample
             // Using stopwatch to calculate the total training time
             Stopwatch swh = Stopwatch.StartNew();
 
+
             // Read numerical sequences from CSV files in the specified folder containing files having training(learning) sequences
             // CSVFileReader class can also be used for single files
             CSVFolderReader reader = new CSVFolderReader(trainingfolderPath);
