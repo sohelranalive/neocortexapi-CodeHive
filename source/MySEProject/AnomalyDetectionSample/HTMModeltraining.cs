@@ -36,6 +36,7 @@ namespace AnomalyDetectionSample
             var sequences2 = reader1.ReadFolder();
 
 
+
             // Combine these sequences for using both training(learning) and predicting sequences
             // We will use both of them to feed into HTM Model for training
             List<List<double>> combinedSequences = new List<List<double>>(sequences1);
