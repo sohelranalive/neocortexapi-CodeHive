@@ -129,7 +129,7 @@ namespace AnomalyDetectionSample
             var lastPredictedValues = new List<string>(new string[] { "0" });
 
             //change the cycle
-            int maxCycles = 3500;
+            int maxCycles = 100;
 
             //
             // Training SP to get stable. New-born stage.
