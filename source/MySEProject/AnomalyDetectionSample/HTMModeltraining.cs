@@ -43,6 +43,7 @@ namespace AnomalyDetectionSample
             combinedSequences.AddRange(sequences2);
 
 
+
             // Convert sequences to HTM input format
             CSVToHTMInput converter = new CSVToHTMInput();
             var htmInput = converter.BuildHTMInput(combinedSequences);
