@@ -128,7 +128,7 @@ namespace AnomalyDetectionSample
 
             var lastPredictedValues = new List<string>(new string[] { "0" });
 
-           
+           //Changes and reduce the cycle count for faster execution
             int maxCycles = 100;
 
             //
