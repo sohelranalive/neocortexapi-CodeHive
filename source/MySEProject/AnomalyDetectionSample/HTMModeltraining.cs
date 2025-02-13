@@ -30,6 +30,7 @@ namespace AnomalyDetectionSample
             CSVFolderReader reader = new CSVFolderReader(trainingfolderPath);
             var sequences1 = reader.ReadFolder();
 
+
             // Read numerical sequences from CSV files in the specified folder containing files having prediction sequences
             // CSVFileReader class can also be used for single files
             CSVFolderReader reader1 = new CSVFolderReader(predictingfolderPath);
