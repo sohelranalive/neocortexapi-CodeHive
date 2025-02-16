@@ -14,7 +14,6 @@
 
 ## Problem Statement
 
-
 <p align='Justify'> The initial challenge to apply a model that can accurately identify the anomalies in numeric time-series data using Hierarchical Temporal Memory(HTM). The problem involves teaching the HTM model to identify the underlying patterns from the train dataset, then using the knowledge to predict and identify irregularities in the test dataset. Anomalies can be defined as data points that deviate significantly from the expected range or pattern. The aim of the project is to simulate a real-world scenario by generating artificial data to train and test the system. Detecting irregularities accurately is critical for applications in areas like network monitoring, fraud detection and predictive maintenance. </p>
 
 ## Introduction
@@ -139,7 +138,7 @@ The primary objective of the project is to create and demonstrate an anomalies d
 
 ## Results and Discussion
 
-<p align='Justify'> Content will be added here </p>
+<p align='Justify'> Working fine. Initial test done </p>
 
 ## Conclusion
 
