@@ -61,6 +61,7 @@ namespace AnomalyDetectionSample
 
             // Our HTM model training concludes here
 
+
             swh.Stop();
 
             Console.WriteLine();
