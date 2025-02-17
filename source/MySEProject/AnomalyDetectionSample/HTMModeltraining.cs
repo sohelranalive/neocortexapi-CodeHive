@@ -58,6 +58,7 @@ namespace AnomalyDetectionSample
             predictor = learning.Run(htmInput);
 
 
+
             // Our HTM model training concludes here
 
             swh.Stop();
