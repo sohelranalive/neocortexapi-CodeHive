@@ -1,5 +1,6 @@
 ﻿using NeoCortexApi;
 using System;
+using System.Text;
 
 namespace AnomalyDetectionSample
 {
@@ -87,6 +88,24 @@ namespace AnomalyDetectionSample
                     Console.WriteLine($"Exception caught: {ex.Message}");
                 }
             }
+
+            //For geeting the test out into a text file
+            //StringBuilder stringBuilder = new StringBuilder();
+
+            //foreach (List<string> innerList in experimentOutputList)
+            //{
+            //    foreach (string line in innerList)
+            //    {
+            //        stringBuilder.AppendLine(line);
+            //    }
+            //}
+
+            //File.WriteAllText(outputFilePath, stringBuilder.ToString());
+
+            //TextOutput.totalAvgAccuracy = _totalAccuracy / _iterationCount;
+
+            //Console.WriteLine("Experiment results have been written to the text file.");
+            //Console.WriteLine("Anomaly Detection Sample Experiment completed.");
 
             Console.WriteLine();
             Console.WriteLine("------------------------------");
