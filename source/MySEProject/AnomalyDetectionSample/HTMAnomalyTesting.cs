@@ -63,6 +63,14 @@ namespace AnomalyDetectionSample
             var triminputtestseq = CSVFolderReader.TrimSequences(inputtestseq);
             myPredictor.Reset();
 
+            //Variable declaration for geeting the test out into a text file
+            string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+            string outputFile = $"testOutput_{timestamp}.txt";
+            string projectBaseDirectory = Directory.GetParent(Directory.GetCurrentDirectory())!.Parent!.Parent!.FullName;
+            string outputFolderPath = Path.Combine(projectBaseDirectory, "output");
+            string outputFilePath = Path.Combine(outputFolderPath, outputFile);
+
+
             // Testing the sequences one by one
             // Our anomaly detection experiment is complete after all the lists are traversed iteratively.
             // If the list contains less than two values, or contain non-negative values, exception is thrown from DetectAnomaly method.
