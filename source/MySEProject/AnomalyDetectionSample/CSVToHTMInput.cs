@@ -23,6 +23,7 @@ namespace AnomalyDetectionSample
                 List<double> value = sequences[i];
                 dictionary.Add(key, value);
             }
+
             return dictionary;
         }
     }
