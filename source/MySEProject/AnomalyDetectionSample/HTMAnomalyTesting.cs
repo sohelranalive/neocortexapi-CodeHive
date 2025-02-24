@@ -45,6 +45,7 @@ namespace AnomalyDetectionSample
             HTMModeltraining myModel = new HTMModeltraining();
             Predictor myPredictor;
 
+
             myModel.RunHTMModelLearning(_trainingFolderPath, _predictingFolderPath, out myPredictor);
 
             Console.WriteLine("------------------------------");
