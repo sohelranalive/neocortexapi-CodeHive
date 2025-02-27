@@ -65,6 +65,7 @@ namespace AnomalyDetectionSample
             var triminputtestseq = CSVFolderReader.TrimSequences(inputtestseq);
             myPredictor.Reset();
 
+
             //Variable declaration for geeting the test out into a text file
             string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
             string outputFile = $"testOutput_{timestamp}.txt";
