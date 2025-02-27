@@ -54,7 +54,6 @@ namespace AnomalyDetectionSample
             Console.WriteLine("Started testing our trained HTM Engine...................");
             Console.WriteLine();
 
-
             // Starting to test our trained HTM model
 
             // CSVFileReader can also be used in place of CSVFolderReader to read a single file
@@ -64,7 +63,6 @@ namespace AnomalyDetectionSample
             var inputtestseq = testseq.ReadFolder();
             var triminputtestseq = CSVFolderReader.TrimSequences(inputtestseq);
             myPredictor.Reset();
-
 
             //Variable declaration for geeting the test out into a text file
             string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
