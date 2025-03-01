@@ -110,6 +110,7 @@ namespace AnomalyDetectionSample
             //Console.WriteLine("Experiment results have been written to the text file.");
             //Console.WriteLine("Anomaly Detection Sample Experiment completed.");
 
+
             Console.WriteLine();
             Console.WriteLine("------------------------------");
             Console.WriteLine();
