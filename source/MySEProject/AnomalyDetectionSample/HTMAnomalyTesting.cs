@@ -161,6 +161,7 @@ namespace AnomalyDetectionSample
             bool startFromFirst = true;
 
 
+
             // These are the first and second items from the input list.
             // These values are neccesary to detect anomaly in the first element of the list.
             double firstItem = list[0];
