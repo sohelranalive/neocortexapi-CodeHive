@@ -168,6 +168,7 @@ namespace AnomalyDetectionSample
             double firstItem = list[0];
             double secondItem = list[1];
 
+
             // Checking the first element of the list for anomaly
             // Using our trained HTM model predictor to predict the first item.
             var secondItemRes = predictor.Predict(secondItem);
