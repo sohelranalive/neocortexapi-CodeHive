@@ -148,6 +148,7 @@ namespace AnomalyDetectionSample
             Console.WriteLine();
             Console.WriteLine("Testing the sequence for anomaly detection: " + string.Join(", ", list) + ".");
 
+
             // Tolerance level set to 10%.
             double tolerance = 0.1;
 
