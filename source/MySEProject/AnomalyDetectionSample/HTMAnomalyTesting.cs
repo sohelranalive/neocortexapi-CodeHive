@@ -152,6 +152,7 @@ namespace AnomalyDetectionSample
             // Tolerance level set to 10%.
             double tolerance = 0.1;
 
+
             // In the beginning, we are going to check whether's anomaly in the first element of the list.
             // For that, we are going to input second item from the list and predict previous item using our trained HTM model.
             // After that, we will compare the first item of the list with the predicted previous item of the second item, i.e predicted first item. 
