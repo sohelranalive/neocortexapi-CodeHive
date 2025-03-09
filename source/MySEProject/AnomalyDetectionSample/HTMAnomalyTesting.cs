@@ -222,6 +222,7 @@ namespace AnomalyDetectionSample
             // If "startFromFirst" flag is true, checkCondition is set to 0, otherwise it is set to 1. 
 
 
+
             int checkCondition = startFromFirst ? 0 : 1;
 
             // Starting element depends on whether there is anomaly in first element or not
