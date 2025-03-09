@@ -185,6 +185,7 @@ namespace AnomalyDetectionSample
                 var stokens3 = secondItemRes.First().Similarity;
                 var stokens4 = stokens2.Reverse().ElementAt(2);
                 double predictedFirstItem = double.Parse(stokens4);
+
                 // firstanomalyScore variable will be used to check the deviation for first element in the list only
                 var firstanomalyScore = Math.Abs(predictedFirstItem - firstItem);
                 var fdeviation = firstanomalyScore / firstItem;
