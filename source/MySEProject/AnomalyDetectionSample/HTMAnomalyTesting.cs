@@ -228,6 +228,7 @@ namespace AnomalyDetectionSample
             // Starting element depends on whether there is anomaly in first element or not
             // Input list will be traversed one by one, like a sliding window
 
+
             for (int i = checkCondition; i < list.Length; i++)
             {
                 //Values for the rest of the list will be iteratively referred to, in the following variable.
