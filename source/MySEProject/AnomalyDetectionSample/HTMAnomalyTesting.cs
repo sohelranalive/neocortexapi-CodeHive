@@ -247,6 +247,7 @@ namespace AnomalyDetectionSample
                     var tokens3 = res.First().Similarity;
 
 
+
                     // We exclude the last element of the list
                     // Because there is no element after that to detect anomaly in.
                     if (i < list.Length - 1)
