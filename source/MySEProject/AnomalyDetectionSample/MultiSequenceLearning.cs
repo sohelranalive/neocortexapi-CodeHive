@@ -121,6 +121,7 @@ namespace AnomalyDetectionSample
             layer1.HtmModules.Add("sp", sp);
 
 
+
             //double[] inputs = inputValues.ToArray();
             int[] prevActiveCols = new int[0];
 
