@@ -123,6 +123,8 @@ namespace AnomalyDetectionSample
 
 
 
+
+
             //double[] inputs = inputValues.ToArray();
             int[] prevActiveCols = new int[0];
 
