@@ -8,6 +8,7 @@ namespace AnomalyDetectionSample
 {
     public static class OutputText
     {
+        
         //Not explored yet
         //public static double TrainingTimeInSeconds { get; set; }
         //Not explored yet
