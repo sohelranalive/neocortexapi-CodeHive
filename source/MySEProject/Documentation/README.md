@@ -414,7 +414,7 @@ To run this project, use the following class/methods given in [Program.cs](https
 ## Results and Discussion
 
 <p align='Justify'>
-After running this project, we got the following [output](https://github.com/sohelranalive/neocortexapi-CodeHive/blob/Sohel/source/MySEProject/AnomalyDetectionSample/ResultVisualizer/experiment_results.txt).
+After running this project, we got the following [experiment_results](https://github.com/sohelranalive/neocortexapi-CodeHive/blob/Sohel/source/MySEProject/AnomalyDetectionSample/ResultVisualizer/experiment_results.txt).
 
 The amount of anomalies found in various numerical data sequences is displayed visually in figure 4. While the y-axis provides various numerical value sequences, the x-axis shows the number of anomalies. various sequences have various anomaly counts. Some sequences have more anomalies than others. Five numerical values make up each sequence, indicating that the dataset includes several five element sequences for which anomaly detection was carried out. The bars' horizontal alignment makes it easy to compare the sequences and identify which ones have more oddities. Heterogeneous patterns within the sequences are suggested by the variation in anomaly numbers. Higher anomaly counts in some sequences could be a sign of outliers, recurrent systematic mistakes, or changes in the behavior of the data. The dataset's regular patterns or steady trends may be represented by the sequences with fewer anomalies.
 
