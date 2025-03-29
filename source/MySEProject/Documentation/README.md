@@ -406,7 +406,7 @@ Here we got time-series comparison plot in figure 5 showing the relationship bet
 </p>
 
 <div align="center">
-  <img src='\_assets\actual vs predicted values with anomalies'/>
+  <img src='\_assets\actual vs predicted values with anomalies.jpeg'/>
 </div>
 
 <p align='center'>Figure 5: Actual vs predicted values with anomalies</p>
