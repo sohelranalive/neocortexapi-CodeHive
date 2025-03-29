@@ -208,6 +208,3 @@ Anomaly detection experiment complete!!.
 
 ------------------------------
 
-D:\Update\neocortexapi-CodeHive\source\MySEProject\AnomalyDetectionSample\bin\Debug\net8.0\AnomalyDetectionSample.exe (process 13384) exited with code 0 (0x0).
-To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
-Press any key to close this window . . .
